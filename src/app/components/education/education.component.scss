@@ -20,7 +20,7 @@
         mat-card-subtitle {
             color: #6c757d;
             font-size: 13px;
-            line-height: 1.2;
+            line-height: 2.2;
             margin-bottom: 0;
 
             span {
@@ -34,7 +34,7 @@
         
         p {
             text-align: justify;
-            line-height: 1.7;
+            line-height: 0.7;
             font-size: 14px;
             color: #495057;
             margin: 0;
@@ -58,6 +58,7 @@
             
             mat-card-subtitle {
                 font-size: 12px;
+                line-height: 2.2;
             }
         }
 
@@ -67,7 +68,7 @@
             p {
                 text-align: left;
                 font-size: 13px;
-                line-height: 1.5;
+                line-height: 0.7;
                 padding: 0 8px;
             }
         }
