@@ -79,7 +79,7 @@
                 margin: 4px 0;
                 color: #6c757d;
                 font-size: 13px;
-                line-height: 1.2;
+                line-height: 1.8;
                 display: flex;
                 gap: 16px;
                 align-items: center;
@@ -124,6 +124,7 @@
             mat-card-subtitle {
                 div {
                     font-size: 12px;
+                    line-height: 1.6;
                     gap: 12px;
 
                     span {
