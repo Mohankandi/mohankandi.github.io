@@ -3,25 +3,6 @@
 .education-card {
     @include base-elevation();
     margin: 16px;
-    
-    .university-logo {
-        width: 80px !important;
-        height: 80px !important;
-        border-radius: 4px !important;
-        margin-right: 16px;
-        border: 1px solid #eee;
-        background-color: white;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        
-        &[mat-card-avatar] {
-            background-size: contain !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            padding: 12px;
-        }
-    }
 
     mat-card-content {
         padding: 16px;
