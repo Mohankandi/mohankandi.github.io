@@ -4,8 +4,8 @@
     margin: 16px;
     
     .company-logo {
-        width: 60px !important;
-        height: 60px !important;
+        width: 70px !important;
+        height: 70px !important;
         border-radius: 4px !important;
         margin-right: 16px;
         border: 1px solid #eee;
@@ -16,10 +16,10 @@
         align-self: flex-start !important;
         
         &[mat-card-avatar] {
-            background-size: contain !important;
+            background-size: 80% !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
-            padding: 4px;
+            padding: 0;
         }
     }
 
