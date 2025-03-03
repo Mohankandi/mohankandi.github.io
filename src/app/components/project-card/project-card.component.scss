@@ -2,7 +2,7 @@
 .project-card {
     @include base-elevation();
     margin: 16px;
-    width: calc(100% - 32px);  // Match education card width
+    width: calc(100% - 32px);
     box-sizing: border-box;
     
     // Override Material's default styles

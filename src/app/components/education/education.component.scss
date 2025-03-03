@@ -2,4 +2,73 @@
 
 .education-card {
     @include base-elevation();
+    margin: 16px;
+    width: calc(100% - 32px);
+    box-sizing: border-box;
+
+    mat-card-header {
+        padding: 24px 24px 0;
+        
+        mat-card-title {
+            color: #343a40;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 4px;
+            line-height: 1.2;
+        }
+
+        mat-card-subtitle {
+            color: #6c757d;
+            font-size: 13px;
+            line-height: 1.2;
+            margin-bottom: 0;
+
+            span {
+                display: inline-block;
+            }
+        }
+    }
+
+    mat-card-content {
+        padding: 24px;
+        
+        p {
+            text-align: justify;
+            line-height: 1.7;
+            font-size: 14px;
+            color: #495057;
+            margin: 0;
+            padding: 0 16px;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin: 12px;
+        width: calc(100% - 24px);
+
+        mat-card-header {
+            padding: 16px 16px 0;
+            
+            mat-card-title {
+                font-size: 15px;
+            }
+            
+            mat-card-subtitle {
+                font-size: 12px;
+            }
+        }
+
+        mat-card-content {
+            padding: 16px;
+            
+            p {
+                text-align: left;
+                font-size: 13px;
+                line-height: 1.5;
+                padding: 0 8px;
+            }
+        }
+    }
 }
