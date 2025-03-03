@@ -4,6 +4,16 @@
     @include base-elevation();
     margin: 16px;
 
+    [mat-card-avatar] {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     mat-card-content {
         padding: 16px;
         
