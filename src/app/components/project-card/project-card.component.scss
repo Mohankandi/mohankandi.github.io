@@ -2,6 +2,8 @@
 .project-card {
     @include base-elevation();
     margin: 16px;
+    width: calc(100% - 32px);  // Match education card width
+    box-sizing: border-box;
     
     // Override Material's default styles
     ::ng-deep {
@@ -47,8 +49,8 @@
         
         p {
             text-align: justify !important;
-            line-height: 1.8;
-            font-size: 16px;
+            line-height: 1.7;
+            font-size: 14px;
             color: #495057;
             margin: 0;
             white-space: pre-line;
@@ -67,7 +69,7 @@
         mat-card-title {
             color: #343a40;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 4px;
             line-height: 1.2;
         }
@@ -76,13 +78,26 @@
             div {
                 margin: 4px 0;
                 color: #6c757d;
-                font-size: 14px;
+                font-size: 13px;
                 line-height: 1.2;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+
+                span {
+                    &:not(:last-child)::after {
+                        content: "•";
+                        margin-left: 8px;
+                    }
+                }
             }
         }
     }
 
     @media (max-width: 768px) {
+        margin: 12px;
+        width: calc(100% - 24px);
+        
         .company-logo {
             width: 50px !important;
             height: 50px !important;
@@ -93,8 +108,8 @@
             
             p {
                 text-align: left;
-                font-size: 15px;
-                line-height: 1.6;
+                font-size: 13px;
+                line-height: 1.5;
                 padding: 0 8px;
             }
         }
@@ -103,12 +118,12 @@
             padding: 16px 16px 0;
             
             mat-card-title {
-                font-size: 16px;
+                font-size: 15px;
             }
             
             mat-card-subtitle {
                 div {
-                    font-size: 13px;
+                    font-size: 12px;
                 }
             }
         }
