@@ -514,7 +514,7 @@ var PillComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"project-card\">\n  <mat-card-header>\n    <div mat-card-avatar\n    [style.background-size]= \"'cover'\"\n    [style.background-image]=\"backGroundImg\"></div>\n    <mat-card-title>{{project?.clientName}}</mat-card-title>\n    <mat-card-subtitle>{{project?.location}} • {{project?.duration}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      {{project?.description}}\n    </p>\n  </mat-card-content>\n</mat-card>"
+module.exports = "<mat-card class=\"project-card\">\n  <mat-card-header>\n    <div mat-card-avatar\n    [style.background-size]= \"'cover'\"\n    [style.background-image]=\"backGroundImg\"></div>\n    <mat-card-title>{{project?.clientName}}</mat-card-title>\n    <mat-card-subtitle>\n      <div>{{project?.location}}</div>\n      <div>{{project?.duration}}</div>\n    </mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <p>\n      {{project?.description}}\n    </p>\n  </mat-card-content>\n</mat-card>"
 
 /***/ }),
 
