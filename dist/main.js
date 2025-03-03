@@ -583,14 +583,11 @@ var ProjectCardComponent = /** @class */ (function () {
             .split(" ")
             .join("-")
             .concat(".png");
-        console.log('Generated image name:', imageName);
         return imageName;
     };
     ProjectCardComponent.prototype.ngOnChanges = function (changes) {
         if (changes && changes.project) {
-            var imageUrl = "/assets/" + this.getImageString();
-            console.log('Trying to load image from:', imageUrl);
-            this.backGroundImg = this.sanitizer.bypassSecurityTrustStyle("url('" + imageUrl + "')");
+            this.backGroundImg = this.sanitizer.bypassSecurityTrustStyle("url('../../../dist/assets/" + this.getImageString() + "')");
         }
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

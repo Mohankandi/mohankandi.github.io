@@ -23,16 +23,13 @@ export class ProjectCardComponent {
       .split(" ")
       .join("-")
       .concat(".png");
-    console.log('Generated image name:', imageName);
     return imageName;
   }
 
   ngOnChanges(changes) {
     if (changes && changes.project) {
-      const imageUrl = `/assets/${this.getImageString()}`;
-      console.log('Trying to load image from:', imageUrl);
       this.backGroundImg = this.sanitizer.bypassSecurityTrustStyle(
-        `url('${imageUrl}')`
+        `url('../../../dist/assets/${this.getImageString()}')`
       );
     }
   }
