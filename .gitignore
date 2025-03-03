@@ -5,7 +5,6 @@ yarn-debug.log
 yarn-error.log
 
 # Angular
-/dist
 /.angular/cache
 /.sass-cache
 /connect.lock
