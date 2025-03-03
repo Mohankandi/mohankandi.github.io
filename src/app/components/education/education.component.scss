@@ -2,39 +2,4 @@
 
 .education-card {
     @include base-elevation();
-    margin: 16px;
-
-    [mat-card-avatar] {
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        object-fit: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    mat-card-content {
-        padding: 16px;
-        
-        p {
-            white-space: pre-line;
-            line-height: 1.6;
-            margin: 0;
-        }
-    }
-
-    mat-card-header {
-        padding: 16px 16px 0;
-        display: flex;
-        align-items: center;
-
-        mat-card-subtitle {
-            div {
-                margin: 4px 0;
-                color: rgba(0, 0, 0, 0.7);
-                font-size: 14px;
-            }
-        }
-    }
 }
