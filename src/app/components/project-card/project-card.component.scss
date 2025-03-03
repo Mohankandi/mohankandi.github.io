@@ -1,4 +1,97 @@
 @import '../../common/styles/mixins';
 .project-card{
     @include base-elevation();
+    margin: 16px;
+    
+    .company-logo {
+        width: 60px !important;
+        height: 60px !important;
+        border-radius: 4px !important;
+        margin-right: 16px;
+        border: 1px solid #eee;
+        background-color: white;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        align-self: flex-start !important;
+        
+        &[mat-card-avatar] {
+            background-size: contain !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            padding: 4px;
+        }
+    }
+
+    mat-card-content {
+        padding: 24px;
+        
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 16px;
+            color: #495057;
+            margin: 0;
+            white-space: pre-line;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+            text-indent: 2em;
+            padding: 0 16px;
+        }
+    }
+
+    mat-card-header {
+        padding: 24px 24px 0;
+        display: flex;
+        align-items: flex-start;
+
+        mat-card-title {
+            color: #343a40;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 4px;
+            line-height: 1.2;
+        }
+
+        mat-card-subtitle {
+            div {
+                margin: 4px 0;
+                color: #6c757d;
+                font-size: 14px;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .company-logo {
+            width: 50px !important;
+            height: 50px !important;
+        }
+
+        mat-card-content {
+            padding: 16px;
+            
+            p {
+                text-align: left;
+                font-size: 15px;
+                line-height: 1.6;
+                padding: 0 8px;
+            }
+        }
+
+        mat-card-header {
+            padding: 16px 16px 0;
+            
+            mat-card-title {
+                font-size: 16px;
+            }
+            
+            mat-card-subtitle {
+                div {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
 }
