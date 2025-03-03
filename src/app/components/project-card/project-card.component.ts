@@ -18,18 +18,18 @@ export class ProjectCardComponent {
     if (!this.project || !this.project.clientName) {
       return null;
     }
-    const imageName = this.project.clientName
+    return this.project.clientName
       .toLowerCase()
       .split(" ")
-      .join("-")
+      .join("")
+      .toString()
       .concat(".png");
-    return imageName;
   }
 
   ngOnChanges(changes) {
     if (changes && changes.project) {
       this.backGroundImg = this.sanitizer.bypassSecurityTrustStyle(
-        `url('https://mohankandi.github.io/assets/${this.getImageString()}')`
+        `url('../../../dist/assets/${this.getImageString()}')`
       );
     }
   }
