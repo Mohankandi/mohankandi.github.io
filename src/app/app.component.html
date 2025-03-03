@@ -1,0 +1,42 @@
+<div class="app">
+  <header></header>
+  <div class="row">
+    <div class="container">
+      <!-- About me -->
+      <section>
+        <heading [heading]="'About Me'"></heading>
+        <about-me></about-me>
+      </section>
+
+      <br>
+
+      <!-- Projects -->
+      <section>
+        <heading [heading]="'Projects'"></heading>
+        <div *ngFor="let project of projects">
+          <project-card [project]="project"></project-card>
+          <br>
+        </div>
+      </section>
+
+
+      <!-- Education details -->
+      <section>
+        <heading [heading]="'Education'"></heading>
+        <div *ngFor="let education of educationDetails">
+          <education [education]="education"></education>
+          <br>
+        </div>
+      </section>
+
+
+      <!-- Skill set -->
+      <section>
+        <heading [heading]="'Skills'"></heading>
+        <skill-set [skills]="skills"></skill-set>
+      </section>
+
+      <br>
+    </div>
+  </div>
+</div>

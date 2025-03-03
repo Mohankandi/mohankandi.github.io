@@ -1,0 +1,19 @@
+<mat-card class="project-card">
+  <mat-card-header>
+    <div mat-card-avatar class="company-logo"
+      [style.background-image]="backGroundImg"
+      [style.background-size]="'contain'"
+      [style.background-position]="'center'">
+    </div>
+    <mat-card-title>{{project?.clientName}}</mat-card-title>
+    <mat-card-subtitle>
+      <div>{{project?.Location}}</div>
+      <div>{{project?.duration}}</div>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{project?.description}}
+    </p>
+  </mat-card-content>
+</mat-card>

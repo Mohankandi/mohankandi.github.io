@@ -1,0 +1,30 @@
+@import '../../common/styles/fonts.scss';
+@import '../../common/styles/mixins';
+.about-me{
+    @include base-elevation();
+    margin: 16px;
+
+    .content {
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 16px;
+        color: #495057;
+        padding: 24px;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+        
+        strong {
+            color: #343a40;
+            font-weight: 600;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            text-align: left;
+            font-size: 15px;
+            padding: 16px;
+            line-height: 1.6;
+        }
+    }
+}

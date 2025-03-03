@@ -1,0 +1,14 @@
+.skill-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        padding: 16px 8px;
+    }
+}
