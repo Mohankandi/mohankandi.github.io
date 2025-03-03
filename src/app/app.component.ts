@@ -34,7 +34,7 @@ export class AppComponent {
     {
       clientName: "University of Central Missouri", 
       location: "Warrensburg, MO",
-      duration: "Jan 2022 to July 2022",
+      duration: "August 2021 to Jan 2022",
       description: `During my Master's at UCM, I worked with the university's internal application team and helped fix broken links and improve the website's navigation. Many of the links were outdated or led to error pages, making it difficult for students and staff to access important information.To solve this, I reviewed the website, found the broken links, and updated them with the correct URLs. I also improved the navigation menu to make it easier for users to access key sections of the website. These changes made the website much more user-friendly and allowed users to quickly find the information they needed.For this project, I used HTML, CSS, JavaScript, and jQuery for front-end updates, and Java was used for backend improvements when needed.`
       }
     ];
